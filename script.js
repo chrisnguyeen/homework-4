@@ -114,8 +114,8 @@ function displaynextQuestion(e){
 function correction(response){
     
     if(response){
-        alert.innerText= "Good"
-        console.log("Good")
+        alert.innerText= "Correct"
+        console.log("Correct")
     }
     else {
         alert.innerText="Wrong"
