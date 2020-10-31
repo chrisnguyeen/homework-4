@@ -68,11 +68,9 @@ function gametime(){
         timer.innerText = count
          count--;
         }, 1000);
-
 }
 
 function scorePage(a, b) {
-
     var userData = {
         inits: a,
         userScore: b
@@ -94,7 +92,6 @@ function displayQuestion(question) {
     });
 }
 
-
 function displaynextQuestion(e){
     currentindex++
     if(currentindex < questions.length){
@@ -108,16 +105,11 @@ function displaynextQuestion(e){
             currentindex = 0
             displayQuestion(nextQuestions)  
         }
-
     }
     else{
         console.log("endgame")
-        endgame()
-        
-
-    }
-    
-     
+        endgame()     
+    }        
 }
 function correction(response){
     
@@ -130,13 +122,10 @@ function correction(response){
         count = count -15
         timer.innerHTML = count
         console.log("Wrong")
-
     }
     setTimeout(function(){
-        alert.innerText=""
-    
+        alert.innerText=""   
         }, 1000);
-
 }
  function endgame (){
     myScore.innaText = count
@@ -144,6 +133,4 @@ function correction(response){
     timecounter.classList.add("d-none")
     quizQuestions.classList.add("d-none")
     addscore.classList.remove("d-none")
-
-
  }
